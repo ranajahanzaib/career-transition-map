@@ -2,6 +2,12 @@
 
 # Dependencies
 node_modules
+.cache
+.venv
+data/raw/
+data/interim/
+data/processed/
+data/releases/
 test/node_modules
 .pnp
 .pnp.js
@@ -41,13 +47,17 @@ test-timings.json
 # Cache
 *.tsbuildinfo
 
+# Local configuration and credentials
+.env*
+!.env.example
+*.pem
+*.key
+credentials.json
+service-account*.json
+AGENTS.md
+
 # Misc
 .DS_Store
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
 
 # Logs
 *.log
@@ -71,6 +81,17 @@ yarn-error.log*
 *google-services.json
 
 # Python
-venv
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.coverage
+htmlcov/
+.tox/
+.nox/
+__pypackages__/
 
 PLAN.md
+.pnpm-store/
+.pytest_cache/
+.ruff_cache/
