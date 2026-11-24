@@ -1,46 +1,23 @@
-## Contributing
+# Contributing
 
-We welcome contributions of all kinds to improve this project! Here's how you can get involved:
+Contributions that improve data quality, documentation, accessibility, or the research interface are welcome.
 
-1. **Fork the Repository**: Start by forking the repository to your GitHub account.
+## Development setup
 
-2. **Clone Your Fork**: Clone the forked repository to your local machine:
+Install the required tools listed in the [README](README.md), then run:
 
-   ```bash
-   git clone <repo_url>
-   cd repo_dir
-   ```
+```bash
+make setup
+```
 
-3. **Create a Branch**: Create a new branch for your feature or bug fix:
+Use separate terminals for `make dev` and `make api`. Copy `.env.example` to `.env.local` to configure local API and release paths. Do not commit credentials, local environment files, raw survey records, or generated release data.
 
-   ```bash
-   git checkout -b feature-name
-   ```
+## Changes and review
 
-4. **Make Changes**: Make your changes to the codebase. Be sure to follow existing code style and conventions.
+- Keep source observations, derived estimates, and visual encodings distinguishable.
+- Preserve source provenance and update the relevant methodology or data documentation when definitions change.
+- Include or update tests for parser, estimator, API, and user-visible behavior changes.
+- Run `make test`, `UV_CACHE_DIR=.cache/uv uv run ruff check scripts services pipelines tests`, and `corepack pnpm build` before opening a pull request.
+- Describe the affected data sources, validation performed, and known limitations in the pull request.
 
-5. **Commit Changes**: Commit your changes with a clear and descriptive message:
-
-   ```bash
-   git commit -m "Add detailed description of the changes"
-   ```
-
-6. **Push Changes**: Push your changes to your fork:
-
-   ```bash
-   git push origin feature-name
-   ```
-
-7. **Submit a Pull Request**: Open a pull request from your branch to the main repository's branch. Include a detailed description of your changes and the problem they solve.
-
-8. **Review and Feedback**: Participate in the review process. Make any requested changes, and your contribution will be merged!
-
-### Guidelines
-
-- Ensure your code follows the existing style and conventions.
-- Include tests for any new functionality or bug fixes.
-- Write clear, concise commit messages and pull request descriptions.
-
-### Issues
-
-Feel free to report bugs or suggest enhancements by creating an issue. Be sure to include detailed information about the problem and, if possible, steps to reproduce it.
+Open an issue for a defect or a proposed change that affects methodology, data scope, or public API behavior. Pull requests should explain the change and link the related issue when one exists.

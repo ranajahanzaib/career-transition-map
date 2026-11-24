@@ -1,10 +1,16 @@
-Fixes #<issue_number_goes_here>
+## Summary
 
-> It's a good idea to open an issue first for discussion.
+Describe the change and its motivation.
 
-**Description**
-A brief summary of what this PR does and why.
+## Data and methodology impact
+
+- Sources, parser, or estimator affected:
+- Public API or interface impact:
+- Limitations or follow-up work:
+
+## Verification
 
 - [ ] Tests pass
-- [ ] README updated if needed
-- [ ] No breaking changes (or described below)
+- [ ] TypeScript checks and production build pass
+- [ ] Documentation and source attribution are current
+- [ ] No credentials, raw respondent records, or generated releases are included
