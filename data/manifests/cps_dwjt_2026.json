@@ -1,0 +1,17 @@
+{
+  "dataset_id": "cps_dwjt_2026",
+  "publisher": "U.S. Census Bureau",
+  "url": "https://www2.census.gov/programs-surveys/cps/datasets/2026/supp/jan26pub.dat.gz",
+  "release_version": "January 2026 public-use supplement",
+  "reference_period": "January 2026; retrospective occupational reference period per questionnaire",
+  "license": "U.S. Census Bureau public-use data; consult source terms and technical documentation",
+  "schema_version": "cps-dwjt-2026-record-layout-v1",
+  "retrieved_at": "2026-11-24T14:51:42.030527+00:00",
+  "file_name": "cps_dwjt_2026.gz",
+  "file_size_bytes": 12033161,
+  "sha256": "7e3ae5bef2b696aaf718ecc73a76609ce64144e09bab92ef4d7be2b7f41af111",
+  "record_count": 121168,
+  "processing_status": "fixed_width_layout_validated",
+  "validation_report": "data/interim/validation/latest.json",
+  "record_count_kind": "physical_line_count_not_eligible_respondents"
+}

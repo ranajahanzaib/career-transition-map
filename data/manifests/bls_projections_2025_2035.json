@@ -1,0 +1,14 @@
+{
+  "dataset_id": "bls_projections_2025_2035",
+  "publisher": "U.S. Bureau of Labor Statistics",
+  "url": "https://www.bls.gov/emp/ind-occ-matrix/occupation.xlsx",
+  "release_version": "2025 National Employment Matrix",
+  "reference_period": "2025 base year to 2035 projections; 2025 wages",
+  "license": "U.S. government public data; consult BLS terms",
+  "schema_version": "bls-occupation-projections-2025",
+  "file_name": null,
+  "file_size_bytes": null,
+  "sha256": null,
+  "record_count": null,
+  "processing_status": "not_acquired"
+}
